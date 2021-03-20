@@ -1,16 +1,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 
-html {
-    background-color: black;
-}
-
 body {
     width: 901px; 
     margin: 0 auto;
     padding: 3rem 10rem 0 10rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
-    background-color: floralwhite;
+    background-color: rgb(240, 239, 236);
     text-align: center;
 }
 
@@ -92,13 +88,41 @@ div#print {
     margin-top: 50px;
 }
 
-main article {
-    margin-top: 1rem;
+section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-top: 20px;
     text-align: left;
+    text-indent: 2rem;
 }
 
-form {
-    background-image: url(img/list-bg.png);
+.recipe {
+    background-image: url("../imgs/list-bg.png");
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.recipe label {
+   /*  display: inline-block; */
+}
+
+.recipe .col1 {
+    
+    width: fit-content;
+    width: 300px;
+}
+
+
+.recipe .col2 {
+   
+    width: fit-content;
+    width: 300px;
+}
+
+label .decor1 {
+    text-decoration: solid;
 }
 
 footer {
