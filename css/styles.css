@@ -1,10 +1,11 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 body {
-    width: 901px; 
+    width: 901px;
     margin: 0 auto;
     padding: 3rem 10rem 0 10rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: rgb(240, 239, 236);
     text-align: center;
@@ -19,7 +20,8 @@ header {
 }
 
 header figure img {
-    width: 42px;
+    width: 47px;
+    height: 50px;
     margin-right: 5px;
 }
 
@@ -31,18 +33,27 @@ header figure img {
     align-content: center;
 }
 
-h2{ 
+h2 {
     width: fit-content;
-    margin-bottom: .2rem;
+    font-family: 'Yellowtail';
     font-size: 1.8rem;
     font-weight: bold;
-    color: black;
     text-align: left;
+}
+
+#logoGroup h2 {
+    margin-top: 15px;
 }
 
 h4 {
     font-size: .6rem;
     color: grey;
+}
+
+header nav {
+    height: fit-content;
+    position: relative;
+    top: 26px;
 }
 
 header #socials {
@@ -54,6 +65,15 @@ header ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+}
+
+hr {
+    background-image: url('/imgs/hr-img.png');
+    margin: 0 auto;
+    border: hidden;
+    height: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 header li {
@@ -73,14 +93,16 @@ h1 {
     font-weight: bold;
 }
 
-p {
+p,
+h4 {
     font-size: .8rem;
-    color: grey;
+    color: rgb(70, 79, 88);
 }
 
 #sectionHeading p {
     text-transform: uppercase;
 }
+
 div#print {
     display: flex;
     width: fit-content;
@@ -88,41 +110,43 @@ div#print {
     margin-top: 50px;
 }
 
-section p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+article {
+    padding: .3rem 0 0 0;
+}
+
+article img {
+    margin-bottom: 1rem;
+}
+
+section.text p {
+    padding-bottom: .5rem;
+    text-indent: 2rem;
+    text-align: justify;
+    line-height: 150%;
+    font-size: medium;
+}
+
+#recipe {
+    columns: 2;
+    background-image: url("../imgs/list-bg.png");
+    margin: 0 auto;
     margin-top: 20px;
     text-align: left;
-    text-indent: 2rem;
 }
 
-.recipe {
-    background-image: url("../imgs/list-bg.png");
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-
+#recipe * {
+    margin: 0 auto;
 }
 
-.recipe label {
-   /*  display: inline-block; */
-}
-
-.recipe .col1 {
-    
-    width: fit-content;
-    width: 300px;
-}
-
-
-.recipe .col2 {
-   
-    width: fit-content;
-    width: 300px;
-}
-
-label .decor1 {
-    text-decoration: solid;
+#recipe label {
+    text-align: left;
+    width: 275px;
+    height: 10px;
+    display: block;
+    padding: .5rem 0 .5rem 0;
+    font-family: 'Yellowtail';
+    font-size: x-large;
+    color: rgb(179, 128, 1);
 }
 
 footer {
